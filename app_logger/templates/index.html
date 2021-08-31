@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block head %} {{ super() }}
+
+{% endblock %} {% block content %}
+<div id="intro">
+  {% with messages = get_flashed_messages() %}
+      {% if messages %}
+  <div class="notification is-success">
+    {{ messages[0] }}
+  </div>
+  {% endif %} {% endwith %}
+
+  <center>
+    <img
+      src="{{ url_for('static', filename= './images/bearing.jpg') }}"
+      style="margin: 20px"
+      height="auto",
+      width="500px"
+    />
+  </center>
+    <center>
+  <h6>
+    Welcome to our thesis!<br/> This website to diagnosis and remaining useful life prediction of bearing.
+    It is easy to use for monitoring bearing in your machine and helps you to save a lot of money and time for maintaining your machine in factory.
+  </h6>
+    </center>
+</div>
+{% endblock %}

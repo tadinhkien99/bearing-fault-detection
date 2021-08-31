@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+  <head>
+    <title>Welcome</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename= 'styles/main.css') }}"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+
+  </head>
+
+
+  <body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <div style="display: inline-block;
+  background: url(../static/images/bk.jpg);width:100%;height: 100%;
+        background-size: 100vw 100vh;
+        {#display: inline-table;#}
+        backdrop-filter: blur(5px);
+        z-index:-1;
+        position: absolute;" ></div>
+
+   <nav class="navbar navbar-expand-lg " style="background-color: lightblue" >
+
+{#      <h1 class="navbar-brand" href="#" style="font-size: 25px; font-weight: bold">Thesis</h1>#}
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalLong" style="font-weight: bold; font-size: large">Introduction</a>
+          </li>
+
+          <div class="modal fade cus_blur" id="exampleModalLong" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" style="max-width: 1250px" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">Giới thiệu luận văn</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="word-wrap: break-word;">
+                    <h5>
+                        1. TÊN ĐỀ TÀI:
+                    </h5>
+                  <p>
+                      Chẩn đoán và dự báo bảo trì vòng bi.
+                  </p>
+                    <h5>
+                        2. GIẢNG VIÊN HƯỚNG DẪN:
+                    </h5>
+                  <p>
+                      Ths. Nguyễn Đức Hoàng.
+                  </p>
+                    <h5>
+                        3. SINH VIÊN THỰC HIỆN:
+                    </h5>
+                  <p>
+                      <span>&#8226; Tạ Đình Kiên   - 1711847</span>
+                      <br>
+                      <span>&#8226; Võ Thanh Thông - 1713358</span>
+                  </p>
+
+                    <h5>
+                        4. MỤC TIÊU ĐỀ TÀI:
+                    </h5>
+                  <p>
+                      Nhờ những kết luận về sức khỏe và thạng thái hoạt động của vòng bi mà
+                      chúng ta có thể bảo trì theo kế hoạch với một lộ trình thích hợp cho vòng bi giúp tiết kiệm được tiền và công sức thời gian trong các bộ máy hoạt động liên tục trong công nghiệp
+                      tránh những tổn thất nghiêm trọng đáng có xẩy ra.
+                  </p>
+                <h5>
+                        5. GIỚI THIỆU:
+                    </h5>
+                  <p>
+                     Với một thế giới ngày càng phát triển, công nghệ ngày càng tiên tiến,
+                      mọi máy móc, động cơ đều chạy một cách tự động và liên tục,
+                      việc máy móc bị hỏng đột ngột sẽ làm quá trình sản xuất bị đình trệ dẫn đến nhiều hệ lụy về tiền bạc, bên cạnh những lỗi có thể quan sát được từ bên ngoài,
+                      thì các lỗi bên trong máy móc như vòng bi của động cơ rất khó để nhận biết. Vì nguyên nhân đó mà hệ thống chẩn đoán lỗi và tuổi thọ vòng bi
+                      được ra đời nhằm chẩn đoán tình trạng sức khỏe vòng bi trong các loại máy móc và đặc biệt là trong công nghiệp.
+                  </p>
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+            <li class="nav-item">
+            <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal" style="font-weight: bold; font-size: large">Detecting Bearing Faults</a>
+          </li>
+
+            <div class="modal fade cus_blur" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog"  role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLabel">Detecting bearing faults</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form method="post" enctype="multipart/form-data">
+                        <h5>Choose your file which you want to detect bearing faults</h5>
+                        Select file: <input class="form-control form-control-sm" id="text_file" name="text_file" type="file" />
+                        <h2></h2>
+                        <button type="predict" href="{{ url_for('static',filename='js/form.js') }}" class="btn btn-primary mr-auto" >Predict</button>
+                    </form>
+
+                    <hr/>
+                    <h5 style="display: inline-block">Result: </h5>
+                    <div id="successAlert" class="alert alert-success" role="alert" style="display:inline-block"></div>
+                    <div id="errorAlert" class="alert alert-danger" role="alert" style="display:inline-block"></div>
+                    <div id="resultResponse" class="alert alert-primary" role="alert" style="display:inline-block"></div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold; font-size: large">
+              Monitoring
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a id="btable" class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal" style="font-weight: bold; font-size: large">Bearing monitoring</a>
+              <a class="dropdown-item" href="#">Coming soon</a>
+{#              <div class="dropdown-divider"></div>#}
+{#              <a class="dropdown-item" href="#">Something else here</a>#}
+            </div>
+          </li>
+
+            <div class="modal fade cus_blur" id="myModal">
+              <div class="modal-dialog" style="max-width: 1250px" role="document">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Factory 1</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body" >
+                      <div class="row">
+                          <div class="col-sm">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                      <div class="card" style="height: 10rem; background-color: #99b9d9">
+{#                      <img src="..." class="card-img-top" alt="...">#}
+                      <div class="card-body flex-column d-flex">
+                        <h5 class="card-title">Machine 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#carouselExampleControls" class="btn btn-primary align-self-end  mt-auto" data-slide="next">Choose Bearing</a>
+{#                          <div>#}
+{#                          <small class="text-muted float-left">Last updated 3 mins ago</small>#}
+{#                            </div>#}
+                      </div>
+                    </div>
+                        </div>
+                          <div class="carousel-item">
+                          <div class="card" style="height: 10rem; background-color: #99b9d9">
+{#                      <img src="..." class="card-img-top" alt="...">#}
+                      <div class="card-body flex-column d-flex">
+                        <h5 class="card-title">Machine 1</h5>
+                          <div class="row">
+                              <div class="col-sm">
+{#                        <div class="btn-group flex-wrap" role="group" aria-label="Basic example">#}
+                          <button id="btcard0" type="button" class="btn btn-btn-info active" aria-expanded="false" data-target="#collapseOne" data-toggle="collapse" aria-controls="collapseOne">Bearing 1</button>
+
+                              </div>
+                              <div class="col-sm">
+{#                        <div class="btn-group flex-wrap" role="group" aria-label="Basic example">#}
+                          <button id="btcard1" type="button" class="btn btn-btn-info active" aria-expanded="false" data-target="#collapseTwo" data-toggle="collapse" aria-controls="collapseTwo">Bearing 2</button>
+                              </div>
+                              <div class="col-sm">
+{#                        <div class="btn-group flex-wrap" role="group" aria-label="Basic example">#}
+                          <button id="btcard2" type="button" class="btn btn-btn-info active" aria-expanded="false" data-target="#collapseThree" data-toggle="collapse" aria-controls="collapseThree">Bearing 3</button>
+                              </div>
+                          </div>
+                          <br>
+                        <a href="#carouselExampleControls" class="btn btn-secondary align-self-start mt-auto" style="width: 100px" data-slide="prev">Back</a>
+                      </div>
+                    </div>
+                        </div>
+                      </div>
+                      </div>
+                          </div>
+                          <div class="col-sm">
+                      <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls1" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                      <div class="card" style="height: 10rem; background-color: #99b9d9">
+{#                      <img src="..." class="card-img-top" alt="...">#}
+                      <div class="card-body flex-column d-flex">
+                        <h5 class="card-title">Machine 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#carouselExampleControls1" class="btn btn-primary align-self-end  mt-auto" data-slide="next">Choose Bearing</a>
+{#                          <div>#}
+{#                          <small class="text-muted float-left">Last updated 3 mins ago</small>#}
+{#                            </div>#}
+                      </div>
+                    </div>
+                        </div>
+                          <div class="carousel-item">
+                          <div class="card" style="height: 10rem; background-color: #99b9d9">
+{#                      <img src="..." class="card-img-top" alt="...">#}
+                      <div class="card-body flex-column d-flex">
+                        <h5 class="card-title">Machine 2</h5>
+                          <div class="row">
+                              <div class="col-sm">
+{#                        <div class="btn-group flex-wrap" role="group" aria-label="Basic example">#}
+                          <button id="btcard10" type="button" class="btn btn-btn-info active" aria-expanded="false" data-target="#collapseOne1" data-toggle="collapse" aria-controls="collapseOne1">Bearing 1</button>
+
+                              </div>
+                              <div class="col-sm">
+{#                        <div class="btn-group flex-wrap" role="group" aria-label="Basic example">#}
+                          <button id="btcard11" type="button" class="btn btn-btn-info active" aria-expanded="false" data-target="#collapseTwo1" data-toggle="collapse" aria-controls="collapseTwo1">Bearing 2</button>
+                              </div>
+                              <div class="col-sm">
+{#                        <div class="btn-group flex-wrap" role="group" aria-label="Basic example">#}
+                          <button id="btcard12" type="button" class="btn btn-btn-info active" aria-expanded="false" data-target="#collapseThree1" data-toggle="collapse" aria-controls="collapseThree1">Bearing 3</button>
+                              </div>
+                          </div>
+                          <br>
+                        <a href="#carouselExampleControls1" class="btn btn-secondary align-self-start mt-auto" style="width: 100px" data-slide="prev">Back</a>
+                      </div>
+                    </div>
+                        </div>
+                      </div>
+                      </div>
+                          </div>
+                          <div class="col-sm">
+                      <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls2" data-slide-to="1"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                      <div class="card" style="height: 10rem; background-color: #99b9d9">
+{#                      <img src="..." class="card-img-top" alt="...">#}
+                      <div class="card-body flex-column d-flex">
+                        <h5 class="card-title">Machine 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#carouselExampleControls2" class="btn btn-primary align-self-end  mt-auto" data-slide="next">Choose Bearing</a>
+{#                          <div>#}
+{#                          <small class="text-muted float-left">Last updated 3 mins ago</small>#}
+{#                            </div>#}
+                      </div>
+                    </div>
+                        </div>
+                          <div class="carousel-item">
+                          <div class="card" style="height: 10rem; background-color: #99b9d9">
+{#                      <img src="..." class="card-img-top" alt="...">#}
+                      <div class="card-body flex-column d-flex">
+                        <h5 class="card-title">Machine 3</h5>
+                          <div class="row">
+                              <div class="col-sm">
+{#                        <div class="btn-group flex-wrap" role="group" aria-label="Basic example">#}
+                          <button id="btcard20" type="button" class="btn btn-btn-info active" aria-expanded="false" data-target="#collapseOne2" data-toggle="collapse" aria-controls="collapseOne2">Bearing 1</button>
+
+                              </div>
+                              <div class="col-sm">
+{#                        <div class="btn-group flex-wrap" role="group" aria-label="Basic example">#}
+                          <button id="btcard21" type="button" class="btn btn-btn-info active" aria-expanded="false" data-target="#collapseTwo2" data-toggle="collapse" aria-controls="collapseTwo2">Bearing 2</button>
+                              </div>
+                              <div class="col-sm">
+{#                        <div class="btn-group flex-wrap" role="group" aria-label="Basic example">#}
+                          <button id="btcard22" type="button" class="btn btn-btn-info active" aria-expanded="false" data-target="#collapseThree2" data-toggle="collapse" aria-controls="collapseThree2">Bearing 3</button>
+                              </div>
+                          </div>
+                          <br>
+                        <a href="#carouselExampleControls2" class="btn btn-secondary align-self-start mt-auto" style="width: 100px" data-slide="prev">Back</a>
+                      </div>
+                    </div>
+                        </div>
+                      </div>
+                      </div>
+                          </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                          <div class="card" style="width: 100%">
+                           <div id="collapseOne" class="collapse"  aria-labelledby="headingOne" data-parent="#accordion">
+                              <div class="card-body">
+                                  <h5 class="card-title">Acceleration of Machine 1 - Bearing 1</h5>
+                                    <h6 class="state" style="display: inline-block">Current Bearing State: </h6>
+                                  <h6 id="state0" style="display:inline-block"></h6>
+
+                                  <center>
+                                      <div class="progress">
+                            <div id="bar110" class="first progress-bar progress-bar-success hhh" style="width:0%;"></div>
+                            <div id="bar111" class="third" style="width:100%; float:right; text-align:center;">calculating...</div>
+                            </div>
+                                      <div style="height: 600px; width: 1000px">
+                              <canvas></canvas>
+                                          </div>
+                                </center>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 100%">
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                              <div class="card-body">
+                                  <h5 class="card-title">Acceleration of Machine 1 - Bearing 2</h5>
+                                 <h6 class="state" style="display: inline-block">Current Bearing State: </h6>
+                                  <h6 id="state1" style="display:inline-block"></h6>
+                                  <center>
+                                      <div class="progress">
+                            <div id="bar120" class="first progress-bar progress-bar-success" style="width:0%;"></div>
+                            <div id="bar121" class="third" style="width:100%; float:right; text-align:center;">calculating...</div>
+                            </div>
+                                      <div style="height: 600px; width: 1000px">
+                              <canvas></canvas>
+                                          </div>
+                                </center>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 100%">
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                              <div class="card-body">
+                                  <h5 class="card-title">Acceleration of Machine 1 - Bearing 3</h5>
+                                 <h6 class="state" style="display: inline-block">Current Bearing State: </h6>
+                                  <h6 id="state2" style="display:inline-block"></h6>
+                                  <center>
+                                      <div class="progress">
+                            <div id="bar130" class="first progress-bar progress-bar-success" style="width:0%;"></div>
+                            <div id="bar131" class="third" style="width:100%; float:right; text-align:center;">calculating...</div>
+                            </div>
+                              <div style="height: 600px; width: 1000px">
+                              <canvas></canvas>
+                                          </div>
+                                </center>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 100%">
+                           <div id="collapseOne1" class="collapse"  aria-labelledby="headingOne" data-parent="#accordion">
+                              <div class="card-body">
+                                  <h5 class="card-title">Acceleration of Machine 2 - Bearing 1</h5>
+                                 <h6 class="state" style="display: inline-block">Current Bearing State: </h6>
+                                  <h6 id="state3" style="display:inline-block"></h6>
+                                  <center>
+                                      <div class="progress">
+                            <div id="bar210" class="first progress-bar progress-bar-success" style="width:0%;"></div>
+                            <div id="bar211" class="third" style="width:100%; float:right; text-align:center;">calculating...</div>
+                            </div>
+                              <div style="height: 600px; width: 1000px">
+                              <canvas></canvas>
+                                          </div>
+                                </center>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 100%">
+                            <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                              <div class="card-body">
+                                  <h5 class="card-title">Acceleration of Machine 2 - Bearing 2</h5>
+                                 <h6 class="state" style="display: inline-block">Current Bearing State: </h6>
+                                  <h6 id="state4" style="display:inline-block"></h6>
+                                  <center>
+                                      <div class="progress">
+                            <div id="bar220" class="first progress-bar progress-bar-success" style="width:0%;"></div>
+                            <div id="bar221" class="third" style="width:100%; float:right; text-align:center;">calculating...</div>
+                            </div>
+                              <div style="height: 600px; width: 1000px">
+                              <canvas></canvas>
+                                          </div>
+                                </center>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 100%">
+                            <div id="collapseThree1" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                              <div class="card-body">
+                                  <h5 class="card-title">Acceleration of Machine 2 - Bearing 3</h5>
+                                 <h6 class="state" style="display: inline-block">Current Bearing State: </h6>
+                                  <h6 id="state5" style="display:inline-block"></h6>
+                                  <center>
+                                      <div class="progress">
+                            <div id="bar230" class="first progress-bar progress-bar-success" style="width:0%;"></div>
+                            <div id="bar231" class="third" style="width:100%; float:right; text-align:center;">calculating...</div>
+                            </div>
+                              <div style="height: 600px; width: 1000px">
+                              <canvas></canvas>
+                                          </div>
+                                </center>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 100%">
+                           <div id="collapseOne2" class="collapse"  aria-labelledby="headingOne" data-parent="#accordion">
+                              <div class="card-body">
+                                  <h5 class="card-title">Acceleration of Machine 3 - Bearing 1</h5>
+                                 <h6 class="state" style="display: inline-block">Current Bearing State: </h6>
+                                  <h6 id="state6" style="display:inline-block"></h6>
+                                  <center>
+                                      <div class="progress">
+                            <div id="bar310" class="first progress-bar progress-bar-success" style="width:0%;"></div>
+                            <div id="bar311" class="third" style="width:100%; float:right; text-align:center;">calculating...</div>
+                            </div>
+                              <div style="height: 600px; width: 1000px">
+                              <canvas></canvas>
+                                          </div>
+                                </center>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 100%">
+                            <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                              <div class="card-body">
+                                  <h5 class="card-title">Acceleration of Machine 3 - Bearing 2</h5>
+                                 <h6 class="state" style="display: inline-block">Current Bearing State: </h6>
+                                  <h6 id="state7" style="display:inline-block"></h6>
+                                  <center>
+                                      <div class="progress">
+                            <div id="bar320" class="first progress-bar progress-bar-success" style="width:0%;"></div>
+                            <div id="bar321" class="third" style="width:100%; float:right; text-align:center;">calculating...</div>
+                            </div>
+                              <div style="height: 600px; width: 1000px">
+                              <canvas></canvas>
+                                          </div>
+                                </center>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 100%">
+                            <div id="collapseThree2" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                              <div class="card-body">
+                                  <h5 class="card-title">Acceleration of Machine 3 - Bearing 3</h5>
+                                 <h6 class="state" style="display: inline-block">Current Bearing State: </h6>
+                                  <h6 id="state8" style="display:inline-block"></h6>
+                                  <center>
+                                      <div class="progress">
+                            <div id="bar330" class="first progress-bar progress-bar-success" style="width:0%;"></div>
+                            <div id="bar331" class="third" style="width:100%; float:right; text-align:center;">calculating...</div>
+                            </div>
+                              <div style="height: 600px; width: 1000px">
+                              <canvas></canvas>
+                                          </div>
+                                </center>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+
+
+
+{#                      <table id="dtable" class="table table-striped" style="width:100%">#}
+{#                      <thead>#}
+{#                        <tr>#}
+{#                            <th>Name</th>#}
+{#                            <th>Quality</th>#}
+{#                            <th>Value</th>#}
+{#                            <th>Time</th>#}
+{#                        </tr>#}
+{#                    </thead>#}
+{#                      <tbody>#}
+{#                        {% for case in cases %}#}
+{#                        <tr>#}
+{#                            <td>{{ case.name }}</td>#}
+{#                            <td>{{ case.quality}}</td>#}
+{#                            <td>{{ case.value }}</td>#}
+{#                            <td>{{ case.time }}</td>#}
+{#                        </tr>#}
+{#                        {% endfor %}#}
+{#                      </tbody>#}
+{#                      </table>#}
+                  </div>
+
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+        </ul>
+          <h3 class="navbar-brand pull-right" href="#" style="color: blue; font-weight: bold">
+              {% if current_user.is_authenticated %}
+          <a href="{{ url_for('auth.logout') }}"
+            class="btn btn-outline-danger"
+            role="button"
+            style="margin-left: 4px;">
+              Log Out
+          </a>
+              {% endif %}
+{#              <button type="button" class="btn btn-outline-danger" style="height: 50px">Log out</button>#}
+            <img src="../static/images/logo_bk.jpg" width="50" height="50">
+            ĐH BÁCH KHOA
+          </h3>
+      </div>
+    </nav>
+  </body>
+</html>
+
